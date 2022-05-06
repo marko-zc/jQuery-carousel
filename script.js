@@ -10,7 +10,7 @@ function onClickSliderRight() {
 
 function onClickSliderLeft() {
     slideLeft(firstRow);
-    slideLeft(secondRow)
+    slideLeft(secondRow);
 }
 
 function slideRight(sliderRow) {

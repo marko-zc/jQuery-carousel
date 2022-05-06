@@ -58,16 +58,21 @@ header, footer {
 main {
     flex-grow: 1;
     display: flex;
-    /* flex-wrap: wrap; */
-    overflow: hidden;
     align-items: center;
-    justify-content: center;
-    justify-items: center;
+}
+
+#slider-section {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    justify-content: flex-end;
 }
 
 #article {
-    flex-shrink: 0;
+    min-width: 301px;
+    max-width: 301px;
     width: 301px;
+    margin-left: 20px;
 }
 
 #article > h2 {
