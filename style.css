@@ -1,6 +1,13 @@
 html, body {
     margin: 0;
     overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 header, footer {
@@ -12,13 +19,6 @@ header, footer {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
 
 #buttons {
@@ -56,22 +56,33 @@ footer {
 }
 
 main {
+    flex-grow: 1;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
 }
 
 #article {
+    flex-shrink: 0;
     width: 301px;
 }
 
 #article > h2 {
-    font: 32px Arial, bold;
+    font-family: 'Source Sans Pro';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
     color: #134880;
 }
 
 #article > p {
-    font: 18px Arial;
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
 }
 
 #slider {
