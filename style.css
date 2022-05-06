@@ -1,0 +1,98 @@
+html, body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header, footer {
+    font: 15px 'Helvetica Neue', bold;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: #DDDDDD;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#buttons {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 80px;
+}
+
+.arrow-button {
+    border: 1px solid #DDDDDD;
+    padding: 22px 25px 22px 25px;
+    border-radius: 5px;
+    margin: 5px 0 5px 0;
+}
+
+.arrow-button:hover {
+    border: 1px solid #134880;
+}
+
+#left-arrow {
+    background: no-repeat center url("Assets/arrow-gray-left.png");
+}
+
+#right-arrow {
+    background: no-repeat center url("Assets/arrow-gray-right.png");
+}
+
+#left-arrow:hover {
+    background: no-repeat center url("Assets/arrow-blue-left.png");
+}
+
+#right-arrow:hover {
+    background: no-repeat center url("Assets/arrow-blue-right.png");
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+#article {
+    width: 301px;
+}
+
+#article > h2 {
+    font: 32px Arial, bold;
+    color: #134880;
+}
+
+#article > p {
+    font: 18px Arial;
+}
+
+#slider {
+    max-width: 100%;
+    flex-shrink: 1;
+    overflow: hidden;
+}
+
+#first-row, #second-row, .image-row {
+    display: flex;
+    justify-content: end;
+    overflow: hidden;
+    height: 200px;
+}
+
+.imageContainer {
+    margin: 5px 0 5px 10px;
+   flex-shrink: 0;
+}
+
+.imageContainer img {
+    height: 100%;
+    border-radius: 5px;
+}
