@@ -20,5 +20,5 @@ function slideRight(sliderRow) {
 
 function slideLeft(sliderRow) {
     const lastElement = sliderRow.children().last();
-    lastElement.animate({ width: 'toggle' }, { duration: "slow", complete: () => { lastElement.prependTo(sliderRow) } });
+    lastElement.animate({ width: 'toggle' }, { duration: "slow", complete: () => { lastElement.show().prependTo(sliderRow) } });
 }
