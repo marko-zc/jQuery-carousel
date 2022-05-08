@@ -1,8 +1,8 @@
-let firstRow, secondRow;
-let throttlePause = false;
 
-firstRow = $("#first-row > .image-row");
-secondRow = $("#second-row > .image-row");
+const firstRow = $("#first-row > .image-row");
+const secondRow = $("#second-row > .image-row");
+
+let throttlePause = false;
 
 function onClickSliderRight() {
     if (throttlePause) return;
