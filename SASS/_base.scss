@@ -1,0 +1,101 @@
+// Resets
+
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    text-size-adjust: none;
+}
+
+footer, header, nav, section, main{
+    display: block;
+}
+
+body{
+    line-height: 1;
+}
+
+ol, ul{
+    list-style: none;
+}
+
+blockquote, q{
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after{
+    content: '';
+    content: none;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input{
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+// Variables
+
+$default-font: 15px 'Helvetica Neue', bold;
+$default-color: #FFFFFF;
+$default-background: #DDDDDD;
+
+// Mixins
+
+@mixin default-content {
+    font: $default-font;
+    color: $default-color;
+    text-align: center;
+    background-color: $default-background;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin button-container {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 80px;
+}
+
+@mixin slider-button {
+    border: 1px solid #DDDDDD;
+    padding: 22px 25px 22px 25px;
+    border-radius: 5px;
+    margin: 5px 0 5px 0;
+    &:hover {
+        border: 1px solid #134880;
+    }
+}
+
+@mixin image-row {
+    display: flex;
+    justify-content: end;
+    overflow: hidden;
+    height: 200px;
+}
+
+@mixin slider-image {
+    margin: 5px 0 5px 10px;
+    flex-shrink: 0;
+
+    img {
+        height: 100%;
+        border-radius: 5px;
+    }
+}

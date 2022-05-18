@@ -1,0 +1,33 @@
+@use 'base';
+
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+// Header / Footer
+
+header, footer {
+    @include default-content;
+}
+
+
+// Main
+
+main {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+// Button container
+
+#buttons {
+    @include button-container;
+}
