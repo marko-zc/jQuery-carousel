@@ -4,19 +4,19 @@ const secondRow = $("#second-row > .image-row");
 
 let throttlePause = false;
 
-function onClickSliderRight() {
+$("#right-arrow").click(function() {
     if (throttlePause) return;
     throttlePause = true;
     slideRight(firstRow);
     slideRight(secondRow);
-}
+});
 
-function onClickSliderLeft() {
+$("#left-arrow").click(function() {
     if (throttlePause) return;
     throttlePause = true;
     slideLeft(firstRow);
     slideLeft(secondRow);
-}
+});
 
 function slideRight(sliderRow) {
     const firstElement = sliderRow.children().first();
