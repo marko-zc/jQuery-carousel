@@ -123,9 +123,7 @@ input {
   justify-content: flex-end;
 }
 .slider-section .slider {
-  max-width: 100%;
   flex-shrink: 1;
-  overflow: hidden;
 }
 .slider-section .slider .first-row, .slider-section .slider .second-row {
   display: flex;
@@ -215,14 +213,15 @@ input {
 }
 
 html, body {
-  overflow-x: hidden;
   height: 100%;
-  width: 100%;
 }
 
-body {
+.content {
   display: flex;
   flex-direction: column;
+  height: 100%;
+  max-width: 941px;
+  margin: auto;
 }
 
 header, footer {
