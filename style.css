@@ -224,15 +224,48 @@ html, body {
   margin: auto;
 }
 
-header, footer {
+header {
+  display: flex;
+}
+header .first-box {
+  width: 301px;
+  display: flex;
   font: 15px "Helvetica Neue", bold;
   color: #FFFFFF;
-  text-align: center;
   background-color: #DDDDDD;
   height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border-radius: 0px 0px 5px 5px;
+  margin-right: 19px;
+}
+header .second-box {
+  width: 621px;
+  font: 15px "Helvetica Neue", bold;
+  color: #FFFFFF;
+  background-color: #DDDDDD;
+  height: 100px;
+  border-radius: 0px 0px 5px 5px;
+}
+header p {
+  width: 245px;
+  font: 15px "Helvetica Neue", bold;
+  color: #FFFFFF;
+  position: relative;
+  top: 39px;
+  left: 400px;
+}
+
+footer {
+  font: 15px "Helvetica Neue", bold;
+  color: #FFFFFF;
+  background-color: #DDDDDD;
+  height: 100px;
+  border-radius: 5px 5px 0px 0px;
+}
+footer p {
+  width: 245px;
+  position: relative;
+  top: 42px;
+  left: 81px;
 }
 
 main {

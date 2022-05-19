@@ -58,12 +58,8 @@ $default-background: #DDDDDD;
 @mixin default-content {
     font: $default-font;
     color: $default-color;
-    text-align: center;
     background-color: $default-background;
     height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 @mixin button-container {

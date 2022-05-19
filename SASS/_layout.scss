@@ -14,10 +14,40 @@ html, body {
 
 // Header / Footer
 
-header, footer {
-    @include default-content;
+header {
+    display: flex;
+    .first-box {
+        width: 301px;
+        display: flex;
+        @include default-content;
+        border-radius: 0px 0px 5px 5px;
+        margin-right: 19px;
+    }
+    .second-box {
+        width: 621px;
+        @include default-content;
+        border-radius: 0px 0px 5px 5px;
+    }
+    p {
+        width: 245px;
+        font: $default-font;
+        color: $default-color;
+        position: relative;
+        top: 39px;
+        left: 400px;
+    }
 }
 
+footer {
+    @include default-content;
+    border-radius: 5px 5px 0px 0px;
+    p {
+        width: 245px;
+        position: relative;
+        top: 42px;
+        left: 81px;
+    }
+}
 
 // Main
 
