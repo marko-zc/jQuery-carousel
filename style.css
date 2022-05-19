@@ -101,62 +101,66 @@ input {
 .arrow-button:hover {
   border: 1px solid #134880;
 }
-.arrow-button #left-arrow {
+
+.left-arrow {
   background: no-repeat center url("Assets/arrow-gray-left.png");
 }
-.arrow-button #left-arrow:hover {
+.left-arrow:hover {
   background: no-repeat center url("Assets/arrow-blue-left.png");
 }
-.arrow-button #right-arrow {
+
+.right-arrow {
   background: no-repeat center url("Assets/arrow-gray-right.png");
 }
-.arrow-button #right-arrow:hover {
+.right-arrow:hover {
   background: no-repeat center url("Assets/arrow-blue-right.png");
 }
 
-#slider-section {
+.slider-section {
   display: flex;
   max-width: 100%;
   width: 100%;
   justify-content: flex-end;
 }
-#slider-section #slider {
+.slider-section .slider {
   max-width: 100%;
   flex-shrink: 1;
   overflow: hidden;
 }
-#slider-section #slider #first-row, #slider-section #slider #second-row {
+.slider-section .slider .first-row, .slider-section .slider .second-row {
   display: flex;
   justify-content: end;
   overflow: hidden;
   height: 200px;
 }
-#slider-section #slider .image-row .imageContainer {
+.slider-section .slider .image-row {
   display: flex;
   justify-content: end;
   overflow: hidden;
   height: 200px;
+}
+.slider-section .slider .image-row .imageContainer {
   margin: 5px 0 5px 10px;
   flex-shrink: 0;
 }
-#slider-section #slider .image-row .imageContainer img {
+.slider-section .slider .image-row .imageContainer img {
   height: 100%;
   border-radius: 5px;
 }
-#slider-section #article {
+.slider-section .article {
   min-width: 301px;
   max-width: 301px;
   width: 301px;
   margin-left: 20px;
 }
-#slider-section #article h2 {
+.slider-section .article h2 {
   font-family: "Source Sans Pro";
   font-weight: 700;
   font-size: 32px;
   line-height: 38px;
   color: #134880;
 }
-#slider-section #article p {
+.slider-section .article p {
   font-family: "Source Sans Pro";
   font-weight: 400;
   font-size: 18px;
@@ -238,7 +242,7 @@ main {
   align-items: center;
 }
 
-#buttons {
+.buttons {
   display: inline-flex;
   flex-direction: column;
   justify-content: flex-start;

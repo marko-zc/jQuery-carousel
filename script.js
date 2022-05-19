@@ -1,17 +1,17 @@
 
-const firstRow = $("#first-row > .image-row");
-const secondRow = $("#second-row > .image-row");
+const firstRow = $(".first-row > .image-row");
+const secondRow = $(".second-row > .image-row");
 
 let throttlePause = false;
 
-$("#right-arrow").click(function() {
+$(".right-arrow").click(function() {
     if (throttlePause) return;
     throttlePause = true;
     slideRight(firstRow);
     slideRight(secondRow);
 });
 
-$("#left-arrow").click(function() {
+$(".left-arrow").click(function() {
     if (throttlePause) return;
     throttlePause = true;
     slideLeft(firstRow);

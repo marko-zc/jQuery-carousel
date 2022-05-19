@@ -28,6 +28,6 @@ main {
 
 // Button container
 
-#buttons {
+.buttons {
     @include button-container;
 }
