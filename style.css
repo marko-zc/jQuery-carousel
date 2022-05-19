@@ -146,8 +146,6 @@ input {
   border-radius: 5px;
 }
 .slider-section .article {
-  min-width: 301px;
-  max-width: 301px;
   width: 301px;
   margin-left: 20px;
 }
@@ -157,11 +155,15 @@ input {
   font-size: 32px;
   line-height: 38px;
   color: #134880;
+  margin-bottom: 20px;
+  height: 120px;
+  width: 301px;
 }
 .slider-section .article p {
   font-family: "Source Sans Pro";
   font-weight: 400;
   font-size: 18px;
+  color: #484A4C;
   line-height: 26px;
 }
 
