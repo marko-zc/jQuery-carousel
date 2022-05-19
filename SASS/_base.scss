@@ -71,9 +71,10 @@ $default-background: #DDDDDD;
 
 @mixin slider-button {
     border: 1px solid #DDDDDD;
-    padding: 22px 25px 22px 25px;
+    height: 60px;
+    width: 60px;
     border-radius: 5px;
-    margin: 5px 0 5px 0;
+    margin-top: 10px;
     &:hover {
         border: 1px solid #134880;
     }
