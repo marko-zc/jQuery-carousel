@@ -1,0 +1,32 @@
+{
+  "name": "factory-slider",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-build": "sass SASS/main.scss style.css",
+    "css-minify": "css-minify -f style.css -o dist",
+    "build:min": "babel script.js --presets minify --out-file dist/script.min.js",
+    "build": "babel script.js --out-file dist/script.min.js && npm run sass-build && npm run css-minify && npm run build:min"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marko-zc/jQuery-carousel.git"
+  },
+  "author": "Marko Žarković Černeli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marko-zc/jQuery-carousel/issues"
+  },
+  "homepage": "https://github.com/marko-zc/jQuery-carousel#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "babel-preset-minify": "^0.5.2"
+  },
+  "dependencies": {
+    "css-minify": "^2.0.0"
+  }
+}

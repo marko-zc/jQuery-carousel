@@ -104,17 +104,17 @@ input {
 }
 
 .left-arrow {
-  background: no-repeat center url("Assets/arrow-gray-left.png");
+  background: no-repeat center url("../Assets/arrow-gray-left.png");
 }
 .left-arrow:hover {
-  background: no-repeat center url("Assets/arrow-blue-left.png");
+  background: no-repeat center url("../Assets/arrow-blue-left.png");
 }
 
 .right-arrow {
-  background: no-repeat center url("Assets/arrow-gray-right.png");
+  background: no-repeat center url("../Assets/arrow-gray-right.png");
 }
 .right-arrow:hover {
-  background: no-repeat center url("Assets/arrow-blue-right.png");
+  background: no-repeat center url("../Assets/arrow-blue-right.png");
 }
 
 .slider-section {
@@ -139,10 +139,10 @@ input {
   height: 200px;
 }
 .slider-section .slider .image-row .imageContainer {
-  margin: 5px 0 5px 10px;
   flex-shrink: 0;
 }
 .slider-section .slider .image-row .imageContainer img {
+  margin: 5px 0 5px 10px;
   height: 100%;
   border-radius: 5px;
 }

@@ -7,16 +7,16 @@
 }
 
 .left-arrow {
-    background: no-repeat center url("Assets/arrow-gray-left.png");
+    background: no-repeat center url("../Assets/arrow-gray-left.png");
     &:hover {
-        background: no-repeat center url("Assets/arrow-blue-left.png");
+        background: no-repeat center url("../Assets/arrow-blue-left.png");
     }
 }
 
 .right-arrow {
-    background: no-repeat center url("Assets/arrow-gray-right.png");
+    background: no-repeat center url("../Assets/arrow-gray-right.png");
     &:hover {
-        background: no-repeat center url("Assets/arrow-blue-right.png");
+        background: no-repeat center url("../Assets/arrow-blue-right.png");
     }
 }
 
