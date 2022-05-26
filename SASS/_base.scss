@@ -88,10 +88,10 @@ $default-background: #DDDDDD;
 }
 
 @mixin slider-image {
-    margin: 5px 0 5px 10px;
     flex-shrink: 0;
-
+    
     img {
+        margin: 5px 0 5px 10px;
         height: 100%;
         border-radius: 5px;
     }

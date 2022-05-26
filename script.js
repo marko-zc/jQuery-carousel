@@ -1,7 +1,7 @@
 
 $( document ).ready(function() {
     
-    const firstRow = $(".first-row > .image-row");
+const firstRow = $(".first-row > .image-row");
 const secondRow = $(".second-row > .image-row");
 
 let throttlePause = false;
@@ -26,7 +26,6 @@ function slideRight(sliderRow) {
         { width: 'toggle' },
         {
             duration: "slow",
-            easing: "linear",
             complete: () => {
                 throttlePause = false;
             }
@@ -40,7 +39,6 @@ function slideLeft(sliderRow) {
         { width: 'toggle' }, 
         {
             duration: "slow",
-            easing: "linear",
             complete: () => {
                 lastElement.prependTo(sliderRow).show();
                 throttlePause = false;
