@@ -5,10 +5,9 @@
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass-build": "sass SASS/main.scss style.css",
-    "css-minify": "css-minify -f style.css -o dist",
-    "build:min": "babel script.js --presets minify --out-file dist/script.min.js",
-    "build": "babel script.js --out-file dist/script.min.js && npm run sass-build && npm run css-minify && npm run build:min"
+    "sass-build": "sass --style compressed SASS/main.scss style.css && @powershell copy 'style.css' 'dist/'",
+    "build:min": "babel script.js --out-file dist/script.js",
+    "build": "@powershell copy 'index.html' 'dist/' && npm run sass-build && npm run build:min"
   },
   "repository": {
     "type": "git",
