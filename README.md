@@ -1,10 +1,10 @@
-#jQuery Carousel
+# jQuery Carousel
 A simple image carousel made for a job interview with jQuery.
 
-##Live demo:
+## Live demo:
 https://marko-zc.github.io/jQuery-carousel/
 
-##Made with:
+## Made with:
 - HTML
 - CSS (SCSS)
 - JavaScript
